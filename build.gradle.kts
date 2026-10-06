@@ -78,7 +78,6 @@ tasks.shadowJar {
     // إعادة تحديد مسار المكتبات المُدمجة (relocation) لتفادي أي تعارض
     // مع بلجنات أخرى تستخدم نفس المكتبات بإصدارات مختلفة.
     relocate("com.zaxxer.hikari", "me.uc.hussein.ultrasclans.libs.hikari")
-    relocate("org.sqlite", "me.uc.hussein.ultrasclans.libs.sqlite")
     relocate("com.mysql", "me.uc.hussein.ultrasclans.libs.mysql")
 }
 
