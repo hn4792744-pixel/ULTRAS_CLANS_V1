@@ -1,0 +1,2 @@
+set-success: "{prefix} &aتم تحديد سبون الكلان في موقعك."
+not-set: "{prefix} &cكلانك ليس لديه سبون بعد. استخدم &f/clan setspawn&c."

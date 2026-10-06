@@ -1,0 +1,4 @@
+success: "{prefix} &aUpgraded &f{upgrade}&a! New value: &f{value}"
+not-enough-cp: "{prefix} &cNot enough CP. Needed: &f{cost} CP&c (you have &f{current} CP&c)."
+max-reached: "{prefix} &cThis upgrade is already at its maximum."
+no-permission: "{prefix} &cYou don't have permission to purchase upgrades."

@@ -1,0 +1,4 @@
+history-restored: "{prefix} &aWelcome back! Your previous rank and stats were restored."
+list-entry: "&7- {rank_color}{player} &8({status})"
+online: "&aOnline"
+offline: "&7Offline"

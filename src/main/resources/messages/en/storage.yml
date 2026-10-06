@@ -1,0 +1,5 @@
+locked-slot: "{prefix} &cThis section is locked. Upgrade your storage level to unlock it."
+no-permission-view: "{prefix} &cYou don't have permission to view the storage."
+no-permission-deposit: "{prefix} &cYou don't have permission to deposit here."
+no-permission-withdraw: "{prefix} &cYou don't have permission to withdraw here."
+in-use: "{prefix} &cAnother member is using the storage right now. Try again in a moment."

@@ -1,0 +1,5 @@
+claimed: "{prefix} &aحصلت على &f{cp} CP&a من مهمة &f{task}&a!"
+already-claimed: "{prefix} &7مكافأة هذه المهمة تم استلامها بالفعل."
+not-complete: "{prefix} &cهذه المهمة لم تكتمل بعد."
+auto-claimed: "{prefix} &eانتهت مدة مهمة &f{task}&e دون استلام، فأُضيفت مكافأتها تلقائيًا إلى CP الكلان."
+progress-line: "&7{task}: &f{progress}/{target} &8({percent}%)"

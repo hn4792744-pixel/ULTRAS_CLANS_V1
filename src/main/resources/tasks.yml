@@ -1,0 +1,56 @@
+# ══════════════════════════════════════════════════════════════
+#   Clan Tasks: Daily / Weekly / Monthly (قسم 31)
+# ══════════════════════════════════════════════════════════════
+#
+# لكل فترة (daily/weekly/monthly) 10 قوالب (templates). كل يوم/أسبوع/شهر
+# يُختار قالب واحد تلقائيًا وبشكل حتمي (نفس القالب لنفس اليوم دائمًا، بلا
+# حاجة لتخزين "أي قالب نشط" في قاعدة البيانات):
+#   اليوم 1 (منذ 1970-01-01) → القالب 1، اليوم 2 → القالب 2 ... اليوم 10 →
+#   القالب 10، ثم يعود للقالب 1 في اليوم 11، وهكذا (قسم 31).
+#
+# أنواع المهام المتاحة (type):
+#   KILL_PLAYERS      - قتل لاعبين (أي كلان)
+#   KILL_MOBS          - قتل مخلوقات (mobs)
+#   MINE_BLOCKS        - كسر كتل (أي نوع، وليس فقط الخامات المحسوبة لـCP)
+#   PLACE_BLOCKS       - وضع كتل
+#   PLAYTIME_MINUTES   - دقائق نشاط الكلان (أي عضو متصل = دقيقة واحدة للكلان)
+#   MEMBERS_ONLINE     - أعلى عدد أعضاء متصلين معًا في نفس اللحظة خلال الفترة
+#   BANK_DEPOSIT       - مبلغ يُودَع في بنك الكلان (تراكمي)
+#
+# reward-cp: كمية الـCP الممنوحة للكلان عند إكمال المهمة والمطالبة بها.
+
+daily:
+  - { name: "Hunters", type: "KILL_PLAYERS", target: 5, reward-cp: 30 }
+  - { name: "Monster Slayers", type: "KILL_MOBS", target: 50, reward-cp: 25 }
+  - { name: "Miners", type: "MINE_BLOCKS", target: 200, reward-cp: 25 }
+  - { name: "Builders", type: "PLACE_BLOCKS", target: 150, reward-cp: 20 }
+  - { name: "Active Clan", type: "PLAYTIME_MINUTES", target: 60, reward-cp: 20 }
+  - { name: "Full House", type: "MEMBERS_ONLINE", target: 3, reward-cp: 25 }
+  - { name: "Investors", type: "BANK_DEPOSIT", target: 1000, reward-cp: 20 }
+  - { name: "Warriors", type: "KILL_PLAYERS", target: 8, reward-cp: 40 }
+  - { name: "Deep Miners", type: "MINE_BLOCKS", target: 350, reward-cp: 35 }
+  - { name: "Night Watch", type: "KILL_MOBS", target: 80, reward-cp: 35 }
+
+weekly:
+  - { name: "Weekly Hunters", type: "KILL_PLAYERS", target: 30, reward-cp: 150 }
+  - { name: "Weekly Extermination", type: "KILL_MOBS", target: 300, reward-cp: 130 }
+  - { name: "Weekly Excavation", type: "MINE_BLOCKS", target: 1500, reward-cp: 140 }
+  - { name: "Weekly Construction", type: "PLACE_BLOCKS", target: 1000, reward-cp: 120 }
+  - { name: "Weekly Dedication", type: "PLAYTIME_MINUTES", target: 600, reward-cp: 130 }
+  - { name: "Weekly Gathering", type: "MEMBERS_ONLINE", target: 5, reward-cp: 140 }
+  - { name: "Weekly Treasury", type: "BANK_DEPOSIT", target: 10000, reward-cp: 130 }
+  - { name: "Weekly Conquest", type: "KILL_PLAYERS", target: 50, reward-cp: 200 }
+  - { name: "Weekly Depths", type: "MINE_BLOCKS", target: 2500, reward-cp: 190 }
+  - { name: "Weekly Patrol", type: "KILL_MOBS", target: 500, reward-cp: 180 }
+
+monthly:
+  - { name: "Monthly Hunters", type: "KILL_PLAYERS", target: 120, reward-cp: 700 }
+  - { name: "Monthly Extermination", type: "KILL_MOBS", target: 1200, reward-cp: 600 }
+  - { name: "Monthly Excavation", type: "MINE_BLOCKS", target: 6000, reward-cp: 650 }
+  - { name: "Monthly Construction", type: "PLACE_BLOCKS", target: 4000, reward-cp: 550 }
+  - { name: "Monthly Dedication", type: "PLAYTIME_MINUTES", target: 2400, reward-cp: 600 }
+  - { name: "Monthly Gathering", type: "MEMBERS_ONLINE", target: 8, reward-cp: 650 }
+  - { name: "Monthly Treasury", type: "BANK_DEPOSIT", target: 50000, reward-cp: 600 }
+  - { name: "Monthly Conquest", type: "KILL_PLAYERS", target: 200, reward-cp: 900 }
+  - { name: "Monthly Depths", type: "MINE_BLOCKS", target: 10000, reward-cp: 850 }
+  - { name: "Monthly Patrol", type: "KILL_MOBS", target: 2000, reward-cp: 800 }

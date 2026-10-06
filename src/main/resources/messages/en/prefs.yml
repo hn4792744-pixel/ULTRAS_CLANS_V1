@@ -1,0 +1,5 @@
+blocked-invites: "{prefix} &cUnable to send: &f{player} &chas turned off clan invites."
+blocked-tpa: "{prefix} &cUnable to send: &f{player} &chas turned off TPA requests."
+blocked-alliance: "{prefix} &cUnable to send: that clan's managers have turned off alliance requests."
+blocked-join-requests: "{prefix} &cUnable to send: &f{clan} &cis not accepting join requests right now."
+blocked-challenges: "{prefix} &cUnable to send: that clan's managers have turned off challenges."

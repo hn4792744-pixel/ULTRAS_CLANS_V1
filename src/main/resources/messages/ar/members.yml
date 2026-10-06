@@ -1,0 +1,4 @@
+history-restored: "{prefix} &aأهلًا بعودتك! تم استرجاع رتبتك وإحصائياتك السابقة."
+list-entry: "&7- {rank_color}{player} &8({status})"
+online: "&aمتصل"
+offline: "&7غير متصل"

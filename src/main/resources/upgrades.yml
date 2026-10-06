@@ -1,0 +1,44 @@
+# ══════════════════════════════════════════════════════════════
+#   ترقيات الكلان (Upgrades) - تُشترى بـCP (تُخصم بشكل دائم).
+#   قسم 30/69: كل تطوير له تكلفة CP قابلة للتخصيص بالكامل.
+#   صيغة التكلفة لكل مستوى: base-cost + (current-level * cost-increment)
+#   حيث current-level = عدد الترقيات المُشتراة سابقًا لهذا النوع.
+# ══════════════════════════════════════════════════════════════
+
+member-capacity:
+  base-cost: 500
+  cost-increment: 250
+  increase-per-purchase: 5
+  max-capacity: 50
+
+bank-capacity:
+  base-cost: 300
+  cost-increment: 150
+  increase-per-purchase: 25000
+  max-capacity: 1000000
+
+# التخزين مستويات ثابتة (1 إلى 10)، لكل انتقال تكلفة مختلفة (قسم 21)
+storage-level:
+  max-level: 10
+  # costs[i] = تكلفة الانتقال من المستوى (i+1) إلى (i+2)
+  costs: [500, 1000, 2000, 3500, 5500, 8000, 11000, 15000, 20000]
+
+warp-capacity:
+  base-cost: 1000
+  cost-increment: 500
+  increase-per-purchase: 1
+  max-capacity: 5
+
+alliance-capacity:
+  base-cost: 1000
+  cost-increment: 500
+  increase-per-purchase: 1
+  max-capacity: 5
+
+# Clan Level: مقياس "هيبة" عام منفصل عن Clan Tier (الذي يُحسب تلقائيًا من
+# الـCP الحالي - قسم 12). رفع المستوى هنا لا يغيّر Tier مباشرة، لكنه
+# يستهلك CP وبالتالي قد يُنزل الـTier تلقائيًا كأثر جانبي طبيعي.
+clan-level:
+  base-cost: 1000
+  cost-increment: 1000
+  max-level: 100

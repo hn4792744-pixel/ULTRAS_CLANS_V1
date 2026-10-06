@@ -1,0 +1,4 @@
+success: "{prefix} &aتم تطوير &f{upgrade}&a! القيمة الجديدة: &f{value}"
+not-enough-cp: "{prefix} &cلا يوجد CP كافٍ. المطلوب: &f{cost} CP&c (تملك &f{current} CP&c)."
+max-reached: "{prefix} &cهذا التطوير وصل للحد الأقصى بالفعل."
+no-permission: "{prefix} &cلا تملك صلاحية شراء الترقيات."

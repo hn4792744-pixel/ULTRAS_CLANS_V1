@@ -1,0 +1,76 @@
+# ══════════════════════════════════════════════════════════════
+#   نظام Clan Points (CP)
+#   كل طريقة حصول على CP هنا لها حماية من الاستغلال (قسم 9/10).
+# ══════════════════════════════════════════════════════════════
+
+# الحد الأقصى اليومي لكمية CP التي يمكن للاعب واحد توليدها لكلانه
+# (من كل المصادر مجتمعة). 0 = بلا حد. يُعاد ضبطه كل 24 ساعة من وقت
+# أول عملية CP لليوم الحالي لكل لاعب (لا يعتمد على منتصف الليل).
+daily-cp-cap-per-player: 500
+
+# ------------------------------------------------------------
+# القتل (PvP)
+# ------------------------------------------------------------
+kill-player:
+  enabled: true
+
+  # أول قتلة على نفس الضحية خلال النافذة الزمنية
+  first-kill-cp: 10
+
+  # القتلات التالية على نفس الضحية خلال نفس النافذة
+  repeat-kill-cp: 2
+
+  # بعد هذا العدد من القتلات على نفس الضحية خلال النافذة: 0 CP
+  # (يمنع تبادل القتل المتكرر بين نفس اللاعبين - قسم 9)
+  max-counted-kills-in-window: 2
+
+  # مدة النافذة الزمنية بالثواني
+  window-seconds: 600
+
+  # قتل عضو من نفس الكلان (friendly fire من مصدر خارجي) = 0 CP دائمًا
+  same-clan-kill-cp: 0
+
+  # الحد الأدنى لمدة القتال الفعلي بالثواني قبل احتساب القتلة (يمنع
+  # "fake kill" الفوري بضربة واحدة على لاعب لم يتقاتل فعليًا - إذا كان
+  # آخر ضرر تلقاه الضحية من القاتل أقدم من هذا الرقم بكثير جدًا، لا زال
+  # يُحتسب طالما كان آخر من ألحق الضرر، لكن يُترك كخيار أمان مستقبلي)
+  require-recent-damage-seconds: 30
+
+# ------------------------------------------------------------
+# التعدين (Mining)
+# ------------------------------------------------------------
+# كل خام: blocks-per-cp = عدد الكتل التي يجب كسرها (تراكميًا لكل لاعب)
+# لمنح 1 CP. العدّاد لا يتصفر عند الوصول للعتبة، بل يستمر (تراكمي).
+# enabled: false يعطّل الخام بالكامل. الكتل التي وضعها لاعب (placed)
+# لا تُحتسب أبدًا حتى لو كُسرت فورًا (حماية من replace-farming).
+mining:
+  enabled: true
+  ores:
+    COAL_ORE: { enabled: false, blocks-per-cp: 50 }
+    DEEPSLATE_COAL_ORE: { enabled: false, blocks-per-cp: 50 }
+    IRON_ORE: { enabled: true, blocks-per-cp: 30 }
+    DEEPSLATE_IRON_ORE: { enabled: true, blocks-per-cp: 30 }
+    COPPER_ORE: { enabled: true, blocks-per-cp: 35 }
+    DEEPSLATE_COPPER_ORE: { enabled: true, blocks-per-cp: 35 }
+    GOLD_ORE: { enabled: true, blocks-per-cp: 20 }
+    DEEPSLATE_GOLD_ORE: { enabled: true, blocks-per-cp: 20 }
+    REDSTONE_ORE: { enabled: true, blocks-per-cp: 25 }
+    DEEPSLATE_REDSTONE_ORE: { enabled: true, blocks-per-cp: 25 }
+    LAPIS_ORE: { enabled: true, blocks-per-cp: 25 }
+    DEEPSLATE_LAPIS_ORE: { enabled: true, blocks-per-cp: 25 }
+    DIAMOND_ORE: { enabled: true, blocks-per-cp: 10 }
+    DEEPSLATE_DIAMOND_ORE: { enabled: true, blocks-per-cp: 10 }
+    EMERALD_ORE: { enabled: true, blocks-per-cp: 8 }
+    DEEPSLATE_EMERALD_ORE: { enabled: true, blocks-per-cp: 8 }
+    ANCIENT_DEBRIS: { enabled: true, blocks-per-cp: 5 }
+
+# ------------------------------------------------------------
+# إيداع البنك (كل إيداع فعلي في بنك الكلان يمنح جزءًا من قيمته كـCP)
+# ------------------------------------------------------------
+bank-deposit:
+  enabled: true
+  # كل هذا المبلغ من العملة المودعة = 1 CP (مثال: 1000 -> 1 CP)
+  currency-per-cp: 1000.0
+  # الحد الأقصى لـCP الممنوح من إيداع واحد (يمنع إيداع مبلغ ضخم دفعة
+  # واحدة للحصول على CP هائل فوري - يبقى الباقي محسوبًا لكن مقصوصًا)
+  max-cp-per-deposit: 50

@@ -1,0 +1,2 @@
+set-success: "{prefix} &aClan spawn set at your location."
+not-set: "{prefix} &cYour clan has no spawn yet. Use &f/clan setspawn&c."

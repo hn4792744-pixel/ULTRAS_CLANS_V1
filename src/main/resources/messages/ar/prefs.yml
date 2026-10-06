@@ -1,0 +1,5 @@
+blocked-invites: "{prefix} &cتعذر الإرسال: &f{player} &cعطّل استقبال دعوات الكلان."
+blocked-tpa: "{prefix} &cتعذر الإرسال: &f{player} &cعطّل استقبال طلبات TPA."
+blocked-alliance: "{prefix} &cتعذر الإرسال: مدراء ذلك الكلان عطّلوا استقبال طلبات التحالف."
+blocked-join-requests: "{prefix} &cتعذر الإرسال: كلان &f{clan} &cلا يستقبل طلبات الانضمام حاليًا."
+blocked-challenges: "{prefix} &cتعذر الإرسال: مدراء ذلك الكلان عطّلوا استقبال التحديات."

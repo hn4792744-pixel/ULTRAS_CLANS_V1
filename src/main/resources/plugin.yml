@@ -1,0 +1,38 @@
+name: Ultras_clans
+version: '${version}'
+main: me.uc.hussein.ultrasclans.UltrasClansPlugin
+api-version: '1.21'
+author: UC_Hussein
+description: ULTRAS CLANS - Professional Clan System
+website: https://github.com/UC-Hussein/Ultras_clans
+softdepend: [Vault, PlaceholderAPI]
+load: POSTWORLD
+
+commands:
+  clan:
+    description: القائمة الرئيسية لأوامر الكلان الخاصة باللاعب
+    usage: /clan [subcommand]
+  clans:
+    description: يفتح واجهة تصفح جميع الكلانات
+    usage: /clans
+  clansettings:
+    description: يفتح واجهة الإعدادات الشخصية (لغة، رسائل، أصوات، استقبال الطلبات) - تخصك وحدك
+    usage: /clansettings
+    aliases: [mysettings, ucprefs]
+  uc:
+    description: الأمر الجذري لأوامر الإدارة (Ultras Clans Admin)
+    usage: /uc clan admin <action>
+
+permissions:
+  ultras.clans.use:
+    description: السماح باستخدام أوامر الكلان الأساسية للاعبين
+    default: true
+  ultras.clans.admin:
+    description: السماح باستخدام أوامر وواجهات إدارة الكلانات
+    default: op
+  ultras.clans.bypass.cooldown:
+    description: تجاوز جميع فترات الانتظار (cooldowns) الخاصة بالنظام
+    default: op
+  ultras.clans.bypass.namefilter:
+    description: تجاوز قيود فلترة أسماء الكلانات
+    default: op

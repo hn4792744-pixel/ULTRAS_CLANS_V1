@@ -1,0 +1,6 @@
+generic: "{prefix} &cحدث خطأ غير متوقع، حاول مرة أخرى."
+database-unavailable: "{prefix} &cخدمة البيانات غير متاحة مؤقتًا، حاول بعد قليل."
+invalid-player: "{prefix} &cلم يتم العثور على اللاعب."
+invalid-clan: "{prefix} &cلم يتم العثور على الكلان."
+action-too-fast: "{prefix} &cأنت تنفذ هذا بسرعة كبيرة، تمهل قليلاً."
+gui-expired: "{prefix} &cهذه الواجهة لم تعد صالحة، الرجاء إعادة فتحها."

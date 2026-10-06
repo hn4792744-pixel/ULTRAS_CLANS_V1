@@ -1,0 +1,7 @@
+chat-on: "{prefix} &aتم تفعيل شات الكلان. رسائلك تذهب لكلانك فقط."
+chat-off: "{prefix} &7تم إيقاف شات الكلان. رسائلك تذهب للشات العام."
+tag-on: "{prefix} &aتم تفعيل وسم الكلان."
+tag-off: "{prefix} &7تم إيقاف وسم الكلان."
+color-changed: "{prefix} &aتم تغيير لون الكلان."
+color-invalid: "{prefix} &cلون غير صالح. المتاح: {colors}"
+no-permission-chat: "{prefix} &cلا تستطيع استخدام شات الكلان."

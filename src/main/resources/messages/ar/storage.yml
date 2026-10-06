@@ -1,0 +1,5 @@
+locked-slot: "{prefix} &cهذا القسم مقفل. طوّر مستوى التخزين لفتحه."
+no-permission-view: "{prefix} &cلا تملك صلاحية عرض المخزن."
+no-permission-deposit: "{prefix} &cلا تملك صلاحية الإيداع هنا."
+no-permission-withdraw: "{prefix} &cلا تملك صلاحية السحب هنا."
+in-use: "{prefix} &cعضو آخر يستخدم المخزن الآن. حاول مرة أخرى بعد قليل."

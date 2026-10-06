@@ -1,0 +1,134 @@
+# ══════════════════════════════════════════════════════════════
+#   رتب الكلان (Member Ranks) و مستويات الكلان (Clan Tiers)
+# ══════════════════════════════════════════════════════════════
+#
+# هناك نوعان مختلفان من "الرتب" في ULTRAS CLANS:
+#
+# 1) member-ranks:
+#    رتب داخلية يديرها مالك الكلان (Owner/Officer/Member...)
+#    تتحكم بالصلاحيات (Permissions) داخل الكلان. قابلة للتعديل
+#    والإضافة يدويًا لكل كلان (حتى 14 رتبة، راجع config.yml).
+#    القائمة هنا هي "القالب الافتراضي" الذي يُنسخ لأي كلان جديد.
+#
+# 2) tiers:
+#    مستوى تلقائي للكلان بالكامل يُحسب من مجموع CP الحالي،
+#    ويرتفع/ينخفض تلقائيًا دون تدخل يدوي (سيُفعّل بالكامل في
+#    المرحلة الثانية مع نظام CP، لكن البنية موجودة من الآن).
+
+member-ranks:
+  - id: "owner"
+    name: "Owner"
+    display: "&4&lOWNER"
+    color: "&4"
+    priority: 100
+    # الرتبة الخاصة بالمالك لا يمكن حذفها أو تعديل صلاحياتها يدويًا،
+    # هي تملك كل الصلاحيات دائمًا.
+    protected: true
+    permissions: ["*"]
+
+  - id: "co_owner"
+    name: "Co-Owner"
+    display: "&c&lCO-OWNER"
+    color: "&c"
+    priority: 90
+    protected: false
+    permissions:
+      - "CLAN_INVITE"
+      - "CLAN_KICK"
+      - "CLAN_BAN"
+      - "CLAN_MUTE"
+      - "CLAN_PROMOTE"
+      - "CLAN_DEMOTE"
+      - "CLAN_BANK_WITHDRAW"
+      - "CLAN_SETTINGS"
+      - "CLAN_ACCEPT_REQUEST"
+      - "CLAN_STORAGE_WITHDRAW"
+      - "CLAN_WARP_CREATE"
+      - "CLAN_WARP_DELETE"
+      - "CLAN_SPAWN_SET"
+      - "CLAN_UPGRADES"
+      - "CLAN_TASKS"
+      - "CLAN_VIEW"
+      - "CLAN_CHAT"
+      - "CLAN_TAG"
+      - "CLAN_STATS"
+      - "CLAN_BANK_DEPOSIT"
+      - "CLAN_STORAGE_VIEW"
+      - "CLAN_STORAGE_DEPOSIT"
+      - "CLAN_WARP_USE"
+      - "CLAN_SPAWN_USE"
+
+  - id: "officer"
+    name: "Officer"
+    display: "&6&lOFFICER"
+    color: "&6"
+    priority: 50
+    protected: false
+    permissions:
+      - "CLAN_INVITE"
+      - "CLAN_KICK"
+      - "CLAN_ACCEPT_REQUEST"
+      - "CLAN_STORAGE_WITHDRAW"
+      - "CLAN_VIEW"
+      - "CLAN_CHAT"
+      - "CLAN_TAG"
+      - "CLAN_STATS"
+      - "CLAN_BANK_DEPOSIT"
+      - "CLAN_STORAGE_VIEW"
+      - "CLAN_STORAGE_DEPOSIT"
+      - "CLAN_WARP_USE"
+      - "CLAN_SPAWN_USE"
+
+  - id: "member"
+    name: "Member"
+    display: "&7MEMBER"
+    color: "&7"
+    priority: 10
+    protected: true
+    default-rank: true
+    permissions:
+      - "CLAN_VIEW"
+      - "CLAN_CHAT"
+      - "CLAN_TAG"
+      - "CLAN_STATS"
+      - "CLAN_BANK_DEPOSIT"
+      - "CLAN_STORAGE_VIEW"
+      - "CLAN_STORAGE_DEPOSIT"
+      - "CLAN_WARP_USE"
+      - "CLAN_SPAWN_USE"
+
+tiers:
+  - id: "bronze"
+    name: "Bronze"
+    display: "&6🥉 Bronze"
+    symbol: "🥉"
+    min-cp: 0
+    max-cp: 999
+
+  - id: "silver"
+    name: "Silver"
+    display: "&7🥈 Silver"
+    symbol: "🥈"
+    min-cp: 1000
+    max-cp: 2499
+
+  - id: "gold"
+    name: "Gold"
+    display: "&e🥇 Gold"
+    symbol: "🥇"
+    min-cp: 2500
+    max-cp: 4999
+
+  - id: "diamond"
+    name: "Diamond"
+    display: "&b💎 Diamond"
+    symbol: "💎"
+    min-cp: 5000
+    max-cp: 9999
+
+  - id: "master"
+    name: "Master"
+    display: "&d👑 Master"
+    symbol: "👑"
+    min-cp: 10000
+    max-cp: -1

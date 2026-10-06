@@ -1,0 +1,7 @@
+chat-on: "{prefix} &aClan chat enabled. Your messages now go to your clan only."
+chat-off: "{prefix} &7Clan chat disabled. Your messages go to global chat."
+tag-on: "{prefix} &aClan tag enabled."
+tag-off: "{prefix} &7Clan tag disabled."
+color-changed: "{prefix} &aClan color changed."
+color-invalid: "{prefix} &cInvalid color. Available: {colors}"
+no-permission-chat: "{prefix} &cYou can't use clan chat."

@@ -1,0 +1,4 @@
+gained: "{prefix} &a+{amount} CP &7({source})"
+tier-up: "{prefix} &6&lYour clan advanced to {tier}!"
+tier-down: "{prefix} &7Your clan dropped to {tier}."
+daily-cap-reached: "{prefix} &cYou've reached your daily CP contribution limit for today."

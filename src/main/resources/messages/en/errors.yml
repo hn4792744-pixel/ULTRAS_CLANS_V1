@@ -1,0 +1,6 @@
+generic: "{prefix} &cAn unexpected error occurred. Please try again."
+database-unavailable: "{prefix} &cThe data service is temporarily unavailable, please try again shortly."
+invalid-player: "{prefix} &cPlayer not found."
+invalid-clan: "{prefix} &cClan not found."
+action-too-fast: "{prefix} &cYou're doing that too fast, slow down."
+gui-expired: "{prefix} &cThis menu is no longer valid, please reopen it."

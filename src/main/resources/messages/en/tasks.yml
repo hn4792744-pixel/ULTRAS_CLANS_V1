@@ -1,0 +1,5 @@
+claimed: "{prefix} &aClaimed &f{cp} CP&a from task &f{task}&a!"
+already-claimed: "{prefix} &7This task's reward was already claimed."
+not-complete: "{prefix} &cThis task isn't complete yet."
+auto-claimed: "{prefix} &eThe reward for &f{task}&e expired unclaimed and was added to your clan's CP automatically."
+progress-line: "&7{task}: &f{progress}/{target} &8({percent}%)"
